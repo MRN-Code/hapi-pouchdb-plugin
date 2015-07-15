@@ -1,14 +1,14 @@
 {
-  "name": "nodeapi",
-  "version": "0.0.0",
-  "description": "Node project boilerplate for COINS",
+  "name": "pouches",
+  "version": "1.0.0",
+  "description": "Expose multiple PouchDB instances to your hapi server",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "config": "^1.11.0",
-    "pre-commit": "^1.0.10"
+    "lodash": "^3.10.0",
+    "pouchdb": "^3.6.0",
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -17,27 +17,19 @@
     "grunt-mocha-cli": "^1.12.0",
     "load-grunt-config": "^0.16.0",
     "load-grunt-tasks": "^3.1.0",
-    "should": "^5.0.0",
     "time-grunt": "^1.0.0"
   },
   "scripts": {
-    "lint": "echo 'run linter!'",
-    "validate": "echo 'run validator!'",
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MRN-Code/node_boilerplate.git"
+    "url": "https://github.com/MRN-Code/hapi-pouches.git"
   },
-  "author": "",
+  "author": "Dylan Wood",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MRN-Code/node_boilerplate/issues"
+    "url": "https://github.com/MRN-Code/hapi-pouches/issues"
   },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ],
-  "homepage": "https://github.com/MRN-Code/node_boilerplate"
+  "homepage": "https://github.com/MRN-Code/hapi-pouches"
 }
